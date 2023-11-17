@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5rem;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.nav_bar {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_bar a {
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    align-items: center;
+    align-content: center;
+}
+
+.hero_btn {
+    display: inline-flex;
+    background: #ff004f;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.hero_btn:hover {
+    background: none;
+    box-shadow: 0 0 5px #ff004f,
+        0 0 10px #ff004f, 0 0 20px #ff004f;
+}
+
+.profile_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_page img {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+
+}
+
+.profile_page a {
+    text-transform: uppercase;
+}
+
+.section_todo_add {
+    width: 100%;
+}
+
+.section_todo_add .form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.section_todo_add .form input[type=text] {
+    width: 60%;
+    border-bottom: 1px solid #ababab;
+    padding: 10px;
+}
+
+.section_todo_add .form .plan_error {
+    position:absolute;
+    bottom:-2rem;
+}
+
+.section_todo_add .form input[type=date] {
+    width: 23%;
+    padding: 10px;
+    border: 2px solid #ababab;
+    border-radius: 10px;
+}
+
+.section_todo_add .form input[type=submit] {
+    width: 12%;
+    background: rgba(0 0 255);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.section_todo_add .form input[type=submit]:hover {
+    transform: scale(1.1);
+}
+
+.section_todo_add .form input {
+    height: 40px;
+    border: none;
+}
+
+main .container {
+    flex-direction: column;
+}
+
+main #section_tasks {
+
+    margin-top: 1rem;
+    background: #f2f2f2;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 492px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+main .container .div_header {
+
+    font-size: 3rem;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: scroll;
+}
+
+table thead {
+    background: #000;
+}
+
+table thead td {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    text-align: start;
+}
+
+table tbody td {
+    padding: 0.5rem 1rem;
+    text-align: start;
+
+}
+
+.table_button {
+    background: #ff004f;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.edit_btn {
+    background: green;
+    transition: All 0.5s;
+}
+
+.edit_btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    padding: 2rem;
+    background: #000;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.delete {
+    transition: all 0.5s;
+}
+
+.delete:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* DELETE MODAL */
+.delete_modal {
+
+    position: fixed;
+    top: 0;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: All 0.5s;
+
+}
+
+.delete_modal p {
+    font-size: 1.5rem;
+}
+
+.delete_modal .delete_wrapper {
+    max-width: 500px;
+    padding: 2rem;
+    width: 90%;
+    color: #000;
+    background: #fff;
+
+}
+
+.delete_modal .modal_buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+.delete_modal .modal_button {
+    display: inline-flex;
+    background: #ff004f;
+    padding: 0.3rem 2rem;
+    color: #fff;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .container a {
+    color: #fff;
+}
+
+.footer .container ul {
+    display: flex;
+}
+
+.footer .container ul li {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+    border: 3px solid #ffff;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.footer .container ul li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+}
+
+
+
+/* PROFILE PHP */
+.passport_image img {
+    width: 300px;
+    height: fit-content;
+}
+
+.profile_wrapper .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details {
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
+    margin-top: 2.5rem;
+    border-radius: 10px;
+}
+
+.profile_detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    align-content: center;
+
+}
+
+.profile_detail a {
+    display: inline-flex;
+    text-align: start;
+}
+
+.profile_btn {
+    display: inline-flex;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    background: #000;
+    border-radius: 10px;
+    border: 3px solid #000;
+}
+
+.profile_btn:hover {
+    background: transparent;
+    color: #000;
+}

@@ -1,0 +1,112 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration:none;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    background:#ccc;
+    align-content: center;
+}
+.container{
+    width:90%;
+    max-width:600px;
+    box-shadow:0 0 5px rgba(0,0,0,0.25);
+    padding:2rem;
+    border-radius:10px;
+    text-align:center;
+    display:flex;
+    align-items: center;
+    margin-top:4rem;
+    flex-direction: column;
+    background:#fff;
+
+}
+input{
+    width:100%;
+    height:60px;
+    margin:10px 0 10px 0;
+    border:none;
+    border-bottom:1px solid #ccc;
+    padding:10px;
+
+}
+input:hover{
+    cursor: pointer;
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+}
+.row .input_box{
+    flex-basis:48%;
+}
+.input_box{
+    width:100%;
+    position:relative;
+}
+.input_box input{
+    background:transparent;
+    outline:none;
+}
+.input_box input:focus{
+    border-bottom:3px solid #ff004f;
+}
+#signup_btn{
+  margin-top:2rem;
+}
+.input_box .error{
+    position:absolute;
+    left:0;
+    bottom:-25px;
+    display:none;
+    color:red;
+}
+.login_error{
+    position:absolute;
+    left:0;
+    bottom:-25px;
+    color:red;
+}
+.container .form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    align-content:center;
+    text-align: center;
+    width:100%;
+}
+
+input[type=submit]{
+    border:none;
+    background:#ff004f;
+    color:#fff;
+    font-size:1.3rem;
+    cursor: pointer;
+    transition:all 0.5s;
+}
+input[type=submit]:hover{
+    background:hsl(0,70%,30%);
+}
+.forms_linker{
+    padding:1rem 0rem;
+}
+.forms_linker a{
+    font-size:1.3rem;
+}
+.forms_title{
+    font-size:3rem;
+    color:#ff004f;
+    font-family: 'ubuntu', sans-serif;
+}
+.row{
+    width:100%;
+}
