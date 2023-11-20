@@ -32,13 +32,16 @@
                 $user_fname=$row["fname"];
                 $user_lname=$row["lname"];
                 $phone=$row["phone"];
-                $email=$row["email"];
+                $email_new=$row["email"];
+                $passwd=$row["passwd"];
                 $date_inserted=$row["dateinserted"];
 
                 $_SESSION['id']=$user_id;
                 $_SESSION['fname']=$user_fname;
                 $_SESSION['lname']=$user_lname;
                 $_SESSION['phone']=$phone;
+                $_SESSION['email']=$email_new;
+                $_SESSION['password']=$passwd;
                 $_SESSION["date_entered"]=$date_inserted;
 
 
@@ -48,7 +51,7 @@
             }
             else{
 
-                echo "Wrong credentials";
+                echo "<p>Wrong credentials</p>";
 
             }
 

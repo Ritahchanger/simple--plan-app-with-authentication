@@ -1,6 +1,6 @@
 <?php include("../layouts/planheader.php") ?>
 
-
+<?php session_start(); ?>
 
     <div class="profile_wrapper">
 
@@ -15,10 +15,10 @@
           
          <div class="profile_detail">
             <div>
-                <a href="#" class="person_name detail">Name</a>
+                <a href="#" class="person_name detail">NAME</a>
             </div>
             <div>
-                <a href="#" class="person_name detail">Dr Nora Nelson</a>
+                <a href="#" class="person_name detail"><?php echo $_SESSION["fname"] . $_SESSION["lname"]; ?></a>
             </div>
          </div>
               
@@ -27,7 +27,7 @@
                 <a href="#" class="person_name detail">Email</a>
             </div>
             <div>
-                <a href="#" class="person_name detail">angelinajell577@gmail.com</a>
+                <a href="#" class="person_name detail"><?php echo $_SESSION["email"];?></a>
             </div>
          </div>
 
@@ -37,16 +37,13 @@
                 <a href="#" class="person_name detail">Phone No</a>
             </div>
             <div>
-                <a href="#" class="person_name detail">+25412378334</a>
+                <a href="#" class="person_name detail"><?php echo $_SESSION["phone"];?></a>
             </div>
          </div>
-
-
-
          </div>
 
          <div>
-            <a href="#" class="profile_btn">EDIT PROFILE</a>
+            <a href="edit_model.php" class="profile_btn">EDIT PROFILE</a>
          </div>
 
          </div>

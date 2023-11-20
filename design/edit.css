@@ -1,0 +1,46 @@
+input{
+    height:40px;
+    width:100%;
+    margin:0.5rem 0rem;
+    border:none;
+    border-bottom:3px solid #ccc;
+    cursor: pointer;
+    outline:none;
+}
+input:focus{
+    border-bottom:3px solid #ff004f;
+}
+.edit_container{
+    margin-top:3.3rem;
+    width:100%;
+    padding:2rem; box-shadow:0 0 5px rgba(0,0,0,0.55);
+    border-radius:10px;
+}
+input[type=submit]{
+    border:none;
+    background:#ff004f;
+    color:#fff;
+    height:55px;
+    border-radius:10px;
+    outline:none;
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+}
+.input_lable{
+    color:#ababab;
+}
+.row input{
+    flex-basis:44%;
+}
+.password_container{
+    display:flex;
+    justify-content:space-between;
+}
+.password_container .input_box{
+    flex-basis:48%;
+}
+#submit{
+    background:green;
+}

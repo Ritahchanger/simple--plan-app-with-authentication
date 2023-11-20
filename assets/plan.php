@@ -113,13 +113,6 @@ include("../layouts/planheader.php")
 
                         </div>
                         </tr>";
-
-                  
-                        
-                      
-
-
-                  
                     }
 
                     ?>
