@@ -44,3 +44,6 @@ input[type=submit]{
 #submit{
     background:green;
 }
+.error{
+    display:none;
+}

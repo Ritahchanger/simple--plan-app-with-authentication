@@ -4,15 +4,12 @@ if (!isset($_SESSION["id"])) {
     header("Location:login.php");
     exit;
 }
-
 include("../layouts/planheader.php")
 ?>
 <main>
-    <div class="container">
+    <div class="container" id="main_container">
         <section class="section_todo_add">
-
             <?php
-
             if (isset($_POST["save"])) {
 
                 include("../dbconnect.php");

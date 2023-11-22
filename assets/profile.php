@@ -42,12 +42,29 @@
          </div>
          </div>
 
+        <div class="buttons_container">
+        <div>
+            <a href="#" class="profile_btn" id="edit_profile_image">EDIT PROFILE IMAGE</a>
+            <input type="file" id="uploadIcon" enctype="multipart/form-data">
+         </div>
+
          <div>
             <a href="edit_model.php" class="profile_btn">EDIT PROFILE</a>
          </div>
+        </div>
 
          </div>
        
     </div>
+
+<script>
+
+document.getElementById("edit_profile_image").onclick=()=>{
+
+    document.getElementById("uploadIcon").click();
+
+}
+
+</script>
 
 <?php include("../layouts/planfooter.php") ?>

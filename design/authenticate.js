@@ -1,6 +1,4 @@
-const signupform=document.getElementById("sign-form");
-signupform.onsubmit=(e)=>{
-
+document.getElementById("sign-form").onsubmit=(e)=>{
     const fname=document.getElementById("fname").value;
     const lname=document.getElementById("lname").value;
     const phone=document.getElementById("phone").value;
@@ -25,22 +23,12 @@ signupform.onsubmit=(e)=>{
         return false;
 
     }else if(name_validator(fname,fname_error) && name_validator(lname,lname_error) && idno_validator(phone,phone_error) && email_validator(email,email_error) && password_validator(password,password_error)&& password_validator(confirm_password,confirm_password_error) && password === confirm_password){
-
         return;
-
     }else{
 
         e.preventDefault();
-
     }
-
-
 }
-
-
-
-
-
 const name_validator=(name,inputError)=>{
     const nameRegex = /^[A-Za-z\s.'-]+$/;
     if((name.trim()).length===0){
@@ -104,3 +92,5 @@ const password_validator=(password,inputError)=>{
         return true;
     }
 }
+
+

@@ -76,6 +76,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    /*  */
+    
 }
 
 .profile_page img {
@@ -147,7 +149,7 @@ main .container {
     flex-direction: column;
 }
 
-main #section_tasks {
+main #section_tasks{
 
     margin-top: 1rem;
     background: #f2f2f2;
@@ -321,14 +323,18 @@ table tbody td {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
 }
 
 .details {
     width: 100%;
     padding: 2rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
     margin-top: 2.5rem;
     border-radius: 10px;
+    background:#000;
+}
+.details a{
+    color:white;
 }
 
 .profile_detail {
@@ -338,12 +344,13 @@ table tbody td {
     align-items: center;
     text-align: start;
     align-content: center;
-
+   
 }
 
 .profile_detail a {
     display: inline-flex;
     text-align: start;
+    font-size:1.3rem;
 }
 
 .profile_btn {
@@ -359,4 +366,14 @@ table tbody td {
 .profile_btn:hover {
     background: transparent;
     color: #000;
+}
+.buttons_container{
+    display:flex;
+    justify-content:space-between;
+}
+.buttons_containeR div{
+    flex-basis:48%;
+}
+#uploadIcon{
+    display:none;
 }

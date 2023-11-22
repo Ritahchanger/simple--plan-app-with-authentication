@@ -1,6 +1,4 @@
-const login_form=document.getElementById("login_form");
-login_form.addEventListener("submit",(e)=>{
-
+document.getElementById("login_form").onsubmit=(e)=>{
     const email=document.getElementById("email").value;
     const password=document.getElementById("password").value;
     const password_error=document.getElementById("password_error");
@@ -10,9 +8,11 @@ login_form.addEventListener("submit",(e)=>{
 
     if(!email_validator(email,email_error) && !password_validator(password,password_error)){
      e.preventDefault()
+    }else{
+        return;
     }
-});
 
+}
 const email_validator=(email,inputError)=>{
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if((email.trim()).length===0){

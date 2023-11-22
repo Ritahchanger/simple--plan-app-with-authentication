@@ -12,6 +12,7 @@
    <span>Copyright <a href="#">&copy; 2023 </a> Munyao's Foundation@inc</span>
 </div>
 </footer>
+<script src="../design/plan.js"></script>
 <script src="../design/index.js"></script>
 </body>
 </html>

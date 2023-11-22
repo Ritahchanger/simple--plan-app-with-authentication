@@ -36,7 +36,10 @@ input{
     margin:10px 0 10px 0;
     border:none;
     border-bottom:1px solid #ccc;
-    padding:10px;
+    padding:10px 0px 0px 0px;
+    font-size:1rem;
+    color:#000;
+    font-weight:500;
 
 }
 input:hover{
@@ -56,6 +59,7 @@ input:hover{
 .input_box input{
     background:transparent;
     outline:none;
+
 }
 .input_box input:focus{
     border-bottom:3px solid #ff004f;
@@ -69,6 +73,7 @@ input:hover{
     bottom:-25px;
     display:none;
     color:red;
+    font-weight:500;
 }
 .login_error{
     position:absolute;
